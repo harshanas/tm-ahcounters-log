@@ -21,6 +21,8 @@ $(document).on('click', '.addbutton', function(e) {
     tmSessionData = JSON.parse(localStorage.getItem(tmSessionDataKey));
     tmSessionData.push(currentSessionData);
     localStorage.setItem(tmSessionDataKey, JSON.stringify(tmSessionData));
+
+    $lastTr.css('background-color', "#c7dbd2");
     
     $oriTr.clone(true).insertAfter($lastTr);
 });
