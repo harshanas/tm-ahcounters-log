@@ -2,15 +2,37 @@
 
     <head>
         <title>Ah-Counters Log</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="A simple tool to record Filler word counts during a Toastmasters meeting">
+        <meta name="keywords" content="Toastmasters, Ah-Counter, count, filler, words, so, um, ahh">
+        <meta name="author" content="Harshana Serasinghe">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-BWJKPKRVVJ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-BWJKPKRVVJ');
+        </script>
+        
         <!-- CSS only -->
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <script src="assets/js/jquery.min.js"></script>
         <!-- JavaScript Bundle with Popper -->
         <script src="assets/js/bootstrap.bundle.min.js"></script>
 
+        
+
         <style>
             tr:hover{
                 background-color: #dc3545 !important;
+            }
+            .navbar-btn{
+                margin-right: 10px;
             }
         </style>
         
@@ -22,6 +44,11 @@
     <nav class="navbar navbar-light bg-light">
         <div class="container">
         <span class="navbar-brand mb-0 h1">Ah-Counter's Log</span>
+        <div class="d-flex">
+            <a href="https://harshana.xyz" class="btn btn-outline-secondary navbar-btn" tabindex="-1" role="button" target="_blank"><i class="fas fa-home"></i></a>
+            
+            <a href="https://github.com/harshanas/tm-ahcounters-log" class="btn btn-outline-secondary" tabindex="-1" role="button" title="Contribute on GitHub" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
         </div>
     </nav>
 
@@ -75,7 +102,8 @@
             </tbody>
         </table>
 
-        <button type="button" class=" btn btn-primary addbutton">+</button>
+        <button type="button" class=" btn btn-primary addbutton">+</button><br><br>
+        <small class="mb-4">Keep the first row empty and start from the second row.</small>
         
     </div>
 
